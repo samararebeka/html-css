@@ -5,51 +5,533 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+    body {
+        background-image: url(55.jpg);
+        background-size: 2000px 900px ;
+        background-repeat: no-repeat;
+        
+
+    }
     
-    <style> 
-   
-.max-widht{
-    background-image: url(5.jpg);
-         background-size: cover;
-            background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
 
-}
+    .header {
+            grid-area: header;
+        }
+
+        .principal {
+            grid-area: principal;
+        }
 
 
+        .item1 {
+            background-image: url(55.jpg);
+            background-size: 900px 600px ;
+        background-repeat: no-repeat;
+            background-color: rgb(250, 250, 250);
+            color: rgb(74, 190, 189);
+            border: auto;
+            font-size: 25px;
+            font-size: xx-large;
+            height: 600px;
+            width: 900px;
+            border-radius: 20px;
+        }
+
+
+        .conteiner {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "principal lateral"
+                "header principal lateral"
+
+        }
+
+        .menu {
+            border-start-start-radius: 20px;
+            border-start-end-radius: 20px;
+            background-color: #252323;
+            height: 55px;
+            padding-left: 50px;
+
+        }
+
+        .welcome { 
+            width: 150px;
+            height: 20px;
+            text-align: center;
+            color: rgb(36, 236, 236);
+            font-size: 50px;
+      
+           
+        
+
+
+        }
+
+        .menuseletor {
+            
+            border-start-start-radius: 20px;
+            border-start-end-radius: 20px;
+            background-color: #252323;
+            height: 55px;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+
+        .seletor {background-image: url(55.jpg);
+            background-size: 900px 600px ;
+        background-repeat: no-repeat;
+            width: 350px;
+            height: 500px;
+            margin-left: 550px;
+            margin-top: -280px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            border-style: outset;
+            position: absolute;
+
+        }
+       
+
+ 
+        .grade1 {
+            height: 10px;
+            margin: 0 auto;
+            display: grid;
+            padding-left: 775px;
+            padding-right: 5%;
+            padding-top: 10px;
+
+        }
+
+        .edit {
+            margin-top: 30%;
+
+        }
+
+        .grade2 {
+            height: 60px;
+            margin: 0 auto;
+            display: grid;
+            padding-right: 85%;
+            margin-top: -20px;
+
+        }
+
+        .cor1 {
+            margin: 30px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+
+        }
+
+        .cor2 {
+            margin: 30px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+        }
+
+        .cor3 {
+            margin: 30px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+
+        }
+
+        .trecho {
+            height: 40px;
+            margin: auto;
+            display: grid;
+            padding-right: 25%;
+            margin-left: 200px;
+            margin-top: 6px;
+
+
+        }
+
+        .trechoo {
+            height: 15px;
+            margin: 4px;
+            padding: 2px;
+            background: rgba(165, 161, 161, 0.692);
+            display: block;
+            border-radius: 3px;
+            padding-right: 15%;
+            margin-top: 13px;
+            margin-right: 300px;
+
+        }
+
+        .trecho1 {
+
+            margin: 4px;
+            padding: 2px;
+            background: rgba(165, 161, 161, 0.692);
+            display: block;
+            border-radius: 6px;
+            margin-right: 100px;
+
+
+        }
+
+        .trecho2 {
+
+            margin: 4px;
+            padding: 2px;
+            background: rgba(165, 161, 161, 0.692);
+            display: block;
+            border-radius: 6px;
+            margin-right: 125px;
+
+
+        }
+
+        .trecho3 {
+
+            margin: 4px;
+            padding: 2px;
+            background: rgba(165, 161, 161, 0.692);
+            display: block;
+            border-radius: 6px;
+            margin-right: 150px;
+        }
+
+        .edi2 {
+            margin-top: 20px;
+
+        }
+
+        .gradepequeno2 {
+            height: 25px;
+            display: grid;
+            padding-right: 70%;
+            margin-top: 20px;
+            margin-left: -30px;
+
+        }
+
+        .corpequeno1 {
+            margin-left: 10px;
+            margin-right: 300px;
+            margin-top: -10px;
+            height: 20px;
+            width: 20px;
+            padding: 8px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+
+        }
+
+        .corpequeno2 {
+            margin-left: 10px;
+            margin-right: 300px;
+            margin-top: 20px;
+            height: 20px;
+            width: 20px;
+            padding: 8px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+        }
+
+        
+        .trechopequeno {
+            height: 10px;
+            display: grid;
+            padding-right: 25%;
+            margin-left: 15px;
+            margin-top: -10px;
+
+        }
+
+        .trechopequenoo {
+            margin: 1px;
+            padding: 2px;
+            background: rgba(165, 161, 161, 0.692);
+            display: block;
+            border-radius: 3px;
+            padding-right: 13%;
+            margin-top: -10px;
+            margin-right: 350px;
+            margin-left: 30px;
+
+        }
+
+        .trechopequeno1 {
+            margin: 1px;
+            padding: 1px;
+            background: rgba(165, 161, 161, 0.377);
+            display: block;
+            border-radius: 6px;
+            margin-right: 100px;
+            margin-left: 30px;
+
+
+        }
+
+        .trechopequeno2 {
+            margin: 1px;
+            padding: 1px;
+            background: rgba(165, 161, 161, 0.377);
+            display: block;
+            border-radius: 6px;
+            margin-right: 125px;
+            margin-left: 30px;
 
 
 
+        }
 
+        .trechopequeno3 {
+            margin: 1px;
+            padding: 1px;
+            background: rgba(165, 161, 161, 0.377);
+            display: block;
+            border-radius: 6px;
+            margin-right: 150px;
+            margin-left: 30px;
 
+        }
 
+        .h1 {
+            padding-left: 180px;
+            font-size: 30px;
+            color: #fff;
+        }
 
+        .menuprincipal{
+            border-radius: 20px;
+            background-color: #252323;
+            height: 55px;
 
-
-
-
-
-
-    
+        }
+        .corprincipal1{
+            margin: 100px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+        }
+        .corprincipal2{
+            margin: 100px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+        }
+        .corprincipal3{
+            margin: 100px;
+            padding: 50px;
+            background: rgb(36, 236, 236);
+            text-align: end;
+            display: block;
+            border-radius: 100%;
+            position: auto;
+        }
+        
     </style>
+
+
 </head>
 
-
-
 <body>
-<div class="container">
-    <div class="c"></div>
-    <div class="c"></div>
-    <div class="c"></div>
-    <div class="c"></div>
-</div>
+    <div class="menuprincipal">
+    <div class="welcome">WELCOME!<br><br></div>
+        <div class="grade2 ">
+            <div class="corprincipal1"></div>
+            <div class="corprincipal2"></div>
+            <div class="corprincipal3"></div>
+        </div>
+
+        <div class="trecho ">
+            <div class="">jkllkjhgfds</div>
+            <div class="">erftgthjuikolopçlkjhg</div>
+            <div class="">ertgyhujikiloç~çlkjuhyt</div>
+            <div class="">eretyuiopoiuyt</div>
+        </div>
+
+        <br> <br>
+        <div class="trecho">
+            <div class=""></div>
+            <div class=" "></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+   
+
+    <div class="conteiner ">
+        <div class=" item1 header ">
+            <div class="menu">
+                <div class="grade1">
+                    <div class="item edit"></div>
+                    <div class="item "></div>
+                    <div class="item "></div>
+                </div>
+                <div class="input">WELCOME!<br><br>
+                <div class="grade2 ">
+                    <div class="cor1"></div>
+                    <div class="cor2"></div>
+                    <div class="cor3"></div>
+                </div>
+
+                <div class="trecho ">
+                    <div class="trechoo"></div>
+                    <div class="trecho1"></div>
+                    <div class="trecho2"></div>
+                    <div class="trecho3"></div>
+                </div>
+
+                <br> <br>
+                <div class="trecho">
+                    <div class="trechoo"></div>
+                    <div class="trecho1 "></div>
+                    <div class="trecho2"></div>
+                    <div class="trecho3"></div>
+                </div>
+                <br> <br>
+                <div class="trecho">
+                    <div class="trechoo"></div>
+                    <div class="trecho1"></div>
+                    <div class="trecho2"></div>
+                    <div class="trecho3"></div>
+                </div>
+
+                <div class="seletor">
+                    <div class="menuseletor">
+                        <div class="input">WELCOME!<br><br>
+                            <div class="grade">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
 
 
-<div class="max-widht">
+                        </div>
+                        <div class="gradepequeno2">
+                            <div class="edi2"></div>
+                            <div class="corpequeno1 "></div>
+                            <div class="corpequeno2"></div>
+                            <div class="corpequeno3"></div>
+                        </div>
 
-</div>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+
+                        <br>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                         </div>
+                        <br>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+
+                        <div class="gradepequeno2 ">
+                            <div class="edi2"></div>
+                            <div class="corpequeno1"></div>
+                            <div class="corpequeno2"></div>
+                            <div class="corpequeno3"></div>
+                        </div>
+
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                        <br>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                        <br>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                        <div class="gradepequeno2">
+                            <div class="corpequeno1"></div>
+                            <div class="edi2"></div>
+
+                            <div class="corpequeno2"></div>
+
+                        </div>
+
+
+
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                        <br>
+                        <div class="trechopequeno">
+                            <div class="edi2"></div>
+                            <div class="trechopequenoo"></div>
+                            <div class="trechopequeno1"></div>
+                            <div class="trechopequeno2"></div>
+                            <div class="trechopequeno3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     
 </body>
